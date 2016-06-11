@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="union-syntaxhighlighter.css">
+        <style>
+        body {
+              background-color: #f1f1f1;
+        }
+
+        .container {
+              max-width: 1100px;
+                margin: 20px auto;
+        }
+        
+        </style>
+
+    </head>
+    <body>
+<div class='container'>
+    <pre class="brush:js">
+// JavaScript
+
+function getStyles(wishlistItem) {
+    return Getter(getItemOrVariant(wishlistItem), 'resources.styles', (item, styles) =&gt; {
+        return makeFiltererWithLink('styles')(item, styles).toList().sortBy(style =&gt; style)
+    })
+}
+var test = "nope";
+ 
+    </pre>
+</div>
+<div class='container'>
+    <pre class="brush:php">
+/* PHP */
+
+echo "How do I shot web?";
+ 
+    </pre>
+</div>
+<div class='container'>
+    <pre class="brush:css">
+/** CSS **/
+
+pre {
+    width: 98%;
+    background-color: #83321a;
+    padding: 1%;
+    font-size: 14px;
+    color: #FCA02A;
+}
+ 
+    </pre>
+</div>
+    <script src='union-syntaxhighlighter.js' type='text/javascript'></script>
+    </body>
+</html>
